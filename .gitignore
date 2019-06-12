@@ -44,7 +44,9 @@ node_modules/
 jspm_packages/
 #node
 package-lock.json
-bin/
+
+# mac os
+.DS_Store
 
 # TypeScript v1 declaration files
 typings/

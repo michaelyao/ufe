@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-/* GET home page. */
+/* GET tool page. */
 router.get('/tool', function(req, res, next) {
   res.render('index-tool', { title: 'ExpressTool' });
 });
