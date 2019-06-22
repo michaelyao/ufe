@@ -44,7 +44,7 @@
 
   </style>
   <!-- Using http://npr.github.io/responsiveiframe/ -->
-  <script src="jquery.responsiveiframe.js"></script>
+  <script src="javascripts/jquery.responsiveiframe.js"></script>
   <script type='text/javascript'>
     $(function() {
       $('iframe').responsiveIframe({xdomain: '*'});
@@ -78,12 +78,14 @@
 </nav>
 
 <div class="container-fluid text-center">
+
   <div class="row content">
-    <div class="col-sm-2 sidenav">
+    <div class="col-sm-2 sidenav" id="linksfeed">
       <p><a href="http://www.xinhuanet.com/english/2019-06/12/c_138137970.htm" target="if_src">Senior political advisors study Xi's remarks on united front work</a></p>
       <p><a href="http://www.xinhuanet.com/english/2019-06/13/c_138138048.htm" target="if_src">Senior CPC official calls for more intelligent methods in political, legal work</a></p>
       <p><a href="http://www.xinhuanet.com/english/2019-06/13/c_138138026.htm" target="if_src">China to boost social credit system with new market regulatory measures</a></p>
     </div>
+
     <div class="col-sm-7 text-left border border-primary">
       <div class="border border-secondary" style="border: 3px solid green;">
         <iframe name="if_src" width="760" height="320"
@@ -105,6 +107,13 @@
     </div>
   </div>
 </div>
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+<!-- Load our React component. -->
+<script type="text/babel" src="javascripts/app/linklist.jsx"></script>
 
 </body>
 </html>
